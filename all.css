@@ -54,6 +54,8 @@ table {
 
 
   .header {
+	margin: auto;
+	max-width: 1920px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -74,8 +76,7 @@ table {
 
   	.menu {
 		max-width: 100%;
-		flex-direction: row;
-		padding: 32px;
+		padding: 32px 0;
 		display:flex ;
 		gap:40px;
 
@@ -85,20 +86,20 @@ table {
 		
 	
 
-	.nav-top{
-		background:
-  linear-gradient(to right, #919191 1px, transparent 1px) 0 0,
-  linear-gradient(to right, #919191 1px, transparent 1px) 0 100%,
-  linear-gradient(to left, #919191 1px, transparent 1px) 100% 0,
-  linear-gradient(to left, #919191 1px, transparent 1px) 100% 100%,
-  linear-gradient(to bottom, #919191 1px, transparent 1px) 0 0,
-  linear-gradient(to bottom, #919191 1px, transparent 1px) 100% 0,
-  linear-gradient(to top, #919191 1px, transparent 1px) 0 100%,
-  linear-gradient(to top, #919191 1px, transparent 1px) 100% 100%;
-
-background-repeat: no-repeat;
-background-size: 8px 8px;
-	  }
+	.menu a:hover{
+		font-weight: 600;
+		background: 
+		linear-gradient(#919191,#919191) top right,
+		linear-gradient(#919191,#919191) top right,
+		linear-gradient(#919191,#919191) bottom left,
+		linear-gradient(#919191,#919191) bottom left,
+		linear-gradient(#919191,#919191) bottom right,
+		linear-gradient(#919191,#919191) bottom right,
+		linear-gradient(#919191,#919191) top left, 
+		linear-gradient(#919191,#919191) top left;
+		background-size: 8px 1px, 1px 8px;
+		background-repeat: no-repeat;
+	}
 
 	.menu  a {
 	display: block;
@@ -109,7 +110,6 @@ background-size: 8px 8px;
 	font-weight: 400;
 	line-height: 1.5;
 	text-decoration: none;
-	height: 32px;
 	padding: 4px 8px 4px 8px;
 
 
@@ -122,30 +122,6 @@ background-size: 8px 8px;
     display: none;
 }
 
- .banner {
-	display: flex;
- }
-
- .banner-text {
-	height: 296px;
-	display: flex;
-	display: block;
-	width: 40%;
-	align-items: center;
-	padding: 248px ;
-
-
- }
-
- .banner img{
-	width: 60%;
- }
-
-.imgclick{
-	background: black;
-	width: 1000px;
-	height: 1000px;
-}
 
 .material-symbols-outlined {
 	font-variation-settings:
@@ -153,24 +129,20 @@ background-size: 8px 8px;
 		'wght' 400,
 		'GRAD' 0,
 		'opsz' 48;
-	font-size: 48px; /* 图标大小 */
-	cursor: pointer; /* 鼠标悬停时显示指针 */
-	text-decoration: none; /* 移除<a>标签的默认下划线 */
-	color: black; /* 默认图标颜色 */
+	font-size: 48px; /* 圖標大小 */
+	cursor: pointer; /* 鼠標懸停手指 */
+	text-decoration: none; /* 移除連結下邊線 */
+	color: black; /* 默認圖示顏色 */
 }
 
 
  @media (max-width:375px) {
 
 .header{
+	
 	width: 100%;
 	height: 56px;
 	position: relative;
-	display: flex;
-	flex-direction: row-reverse;
-	position: fixed;
-
-
 
 }
 
@@ -179,7 +151,7 @@ background-size: 8px 8px;
 	display: flex;
     /* 隱藏選單 */
     max-height: 0px;
-    overflow: hidden;
+	overflow: hidden;
     /* 取消 display: flex; */
     display: block;
     /* 設定絕對定位 */
@@ -189,15 +161,12 @@ background-size: 8px 8px;
     width: 100%;
     text-align: center;
 	padding: 0px;
-	margin: 40px;
-	column-gap:24px
+	margin: 28px;
 	
-
-
   }
 
  
-  
+
   .menu li a {
 	height: 38px;
 	width: 96px;
@@ -206,17 +175,11 @@ background-size: 8px 8px;
 	font-family: Noto Sans;
 	font-size: 20px;
 	font-weight: 400;
-	line-height: 30px;
+	line-height: 1.5;
 	padding: 4px 8px 4px 8px;
-	flex-direction: column;
-
 
   }
 
-  .menu .nav-top{
-	font-weight: 700;
-	
-  }
 
   .header .material-symbols-outlined {
 
@@ -226,7 +189,7 @@ background-size: 8px 8px;
     text-decoration: none;
 	position: absolute;
 	z-index: 100;
-	right: 20px;
+	right: 3px;
     top:8px;
   }
 
@@ -234,7 +197,8 @@ background-size: 8px 8px;
 
 
   .menu li {
-	display: flex;
+	font-size: 20px;
+	line-height: 30px;
 	padding:12px;
   }
   
@@ -244,12 +208,219 @@ background-size: 8px 8px;
   
   /* 將內容往下推，不要跟表頭重疊 */
   
-
-.header img {
+  .header img {
 	position: absolute;
 	z-index: 99;
-	top: 12px;
+	top: 8px;
 	left: 12px;
+
+  }
+ }  
+
+
+
+.main {
+	margin: auto;
+	max-width: 1920px;
+ 	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+ 	background: #fafafa ;
+ 	padding: 20px;
+ 	padding: 80px 0;
 
 }
 
+
+.banner {
+	max-width: 1920px;
+	position: relative;
+	max-width: 670px;
+	text-align: center;
+	padding: 59px 71px;
+
+  }
+
+
+.banner img{
+	position: absolute;
+}
+
+h2 {
+	font-family: Noto Sans;
+	color: #1e1e1e;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28.8px;
+
+  }
+
+.one {
+	padding: 0px 0px 16px 0px;
+
+}
+
+span {
+	display: inline-block;
+  position: relative;
+  z-index: 0;
+} 
+
+.underline {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.mark1 {
+	left: 0px;
+	top: 0px;
+  }
+  
+  .mark2 {
+	right: 0px;
+	bottom: 0px;
+  }
+
+  .experience {
+	display: flex;
+	gap: 40px;
+	max-width: 636px;
+  }  
+
+  .experience h3 {
+	font-size: 16px;
+	color: #5B5B5B;
+	line-height: 24px;
+	text-align: center;
+	font-weight: 400;
+	font-family: Noto Sans;
+
+
+
+}
+
+.experience p {
+
+font-family: Noto Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+max-width: 298px;
+color: #3B3B3B;
+
+
+}
+
+.experience .line {
+	border: 2px solid #c1c1c1;
+	width: 24px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+
+  }
+
+  .content {
+	width: 1296px;
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .card {
+	width: 636px;
+	height: 400px;
+	margin-bottom: 218px;
+  }
+  
+  .card img {
+	border-radius: 8px;
+	margin-bottom: 16px;
+  }
+  
+  .content h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 8px;
+  }
+  
+  .content p {
+	font-size: 16px;
+	color: #919191;
+	line-height: 24px;
+	font-weight: thin;
+	margin-bottom: 24px;
+  }
+  
+  .tag {
+	display: flex;
+	gap: 16px;
+  }
+  .tag li {
+	background: #f1f1f1;
+	color: black;
+	text-align: center;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 16px;
+  }
+  
+
+  @media (max-width:375px) {
+	
+	h2  {	
+		max-width: 300px;
+		font-family: Noto Sans;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: center;
+		padding: 0px 20px;
+
+	  }
+
+	.one {
+		max-width: 300px;
+		font-family: Noto Sans;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: center;
+		padding: 0px 0px 8px 0px;
+	
+	}
+	  
+	  .mark1 {
+		position: static !important;
+	  }
+	  .mark2 {
+		display: none;
+	  }
+	
+	  .work1 {
+		margin-right: 0;
+	  }
+	  .experience {
+		flex-direction: column;
+		gap: 20px;
+		max-width: 235px;
+
+
+	  }
+
+.main {
+	padding: 0px;
+	padding-bottom: 80px;
+}
+
+.banner {
+	padding: 40px 0px ;
+}
