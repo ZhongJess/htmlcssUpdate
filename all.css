@@ -50,8 +50,9 @@ table {
 *, *::before, *::after {
     box-sizing: border-box;
   }
-
-
+  body {
+	font-family: Noto Sans, sans-serif;
+  }
 
   .header {
 	margin: auto;
@@ -67,7 +68,7 @@ table {
   .header img {
 	position: absolute;
 	top:28px;
-	left: 312px;
+	left: 16.25%;
 	width: 90px;
 	height: 40px;
 	
@@ -140,7 +141,7 @@ table {
 
 .header{
 	
-	width: 100%;
+	max-width: 375px;
 	height: 56px;
 	position: relative;
 
@@ -156,16 +157,16 @@ table {
     display: block;
     /* 設定絕對定位 */
     position: absolute;
+	z-index: 2;
     top: 56px;
     /* 選單滿版呈現，也可以設定 left:0; right:0; */
     width: 100%;
     text-align: center;
 	padding: 0px;
-	margin: 28px;
+	background-color: #ffffff;
 	
   }
 
- 
 
   .menu li a {
 	height: 38px;
@@ -204,6 +205,7 @@ table {
   
   .menu-show .menu {
     max-height: 500px;
+	padding: 28px;
   }
   
   /* 將內容往下推，不要跟表頭重疊 */
@@ -215,6 +217,7 @@ table {
 	left: 12px;
 
   }
+
  }  
 
 
@@ -246,7 +249,7 @@ table {
 	position: absolute;
 }
 
-h2 {
+h1 {
 	font-family: Noto Sans;
 	color: #1e1e1e;
 	font-size: 24px;
@@ -323,19 +326,21 @@ color: #3B3B3B;
   }
 
   .content {
-	width: 1296px;
-	margin-top: 120px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-top: 120px;
+	max-width: 1296px;
+	margin: auto;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	row-gap: 80px;
+	
   }
   
   .card {
+
 	width: 636px;
-	height: 400px;
-	margin-bottom: 218px;
+	height: 538px;
   }
   
   .card img {
@@ -345,7 +350,7 @@ color: #3B3B3B;
   
   .content h2 {
 	font-size: 28px;
-	font-weight: bold;
+	font-weight: 700;
 	margin-bottom: 8px;
   }
   
@@ -353,7 +358,7 @@ color: #3B3B3B;
 	font-size: 16px;
 	color: #919191;
 	line-height: 24px;
-	font-weight: thin;
+	font-weight: 400;
 	margin-bottom: 24px;
   }
   
@@ -376,7 +381,7 @@ color: #3B3B3B;
 
   @media (max-width:375px) {
 	
-	h2  {	
+	h1  {	
 		max-width: 300px;
 		font-family: Noto Sans;
 		font-size: 20px;
@@ -417,6 +422,7 @@ color: #3B3B3B;
 	  }
 
 .main {
+	max-width: 375px;
 	padding: 0px;
 	padding-bottom: 80px;
 }
@@ -424,3 +430,317 @@ color: #3B3B3B;
 .banner {
 	padding: 40px 0px ;
 }
+  }
+
+
+@media (max-width:375px) {  
+
+	.content {
+		max-width: 375px;
+		margin: auto;
+		padding: 80px 12px 48px 12px;
+		max-width: 375px;
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		justify-content: space-between;
+		align-content: center;
+
+
+	  }
+	  
+	  .card {
+		max-width: 351px;
+		height: 344px;
+		
+	  }
+	  
+	  .card img {
+		display: block;
+		width: 351px;
+		height: 224px;
+		border-radius: 4px;
+		margin-bottom: 16px;
+		
+	}
+
+	 
+	  
+	  .content h2 {
+		margin: auto;
+		font-family: Noto Sans;
+		max-width: 319px;
+		color: #3B3B3B;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 8px;
+		
+	
+
+	  }
+	  
+	  .content p {
+		margin: auto;
+		max-width: 319px;
+		font-family: Noto Sans;
+		color: #919191;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+		text-align: left;
+		margin-bottom: 16px;
+	  }
+	  
+	  .tag {
+		display: flex;
+		gap: 8px;
+		padding-left: 16px;
+	
+	  }
+
+	  .tag li {
+		background: #f1f1f1;
+		color: #3B3B3B;
+		text-align: center;
+		line-height: 1.5;
+		padding: 4px 12px ;
+		border-radius: 16px;
+		font-family: Noto Sans;
+		font-size: 16px;
+		font-weight: 400;
+
+
+	  }
+
+}
+
+.page {
+	display: flex;
+	align-content: center;
+}
+
+.page ul {
+	margin: auto;
+	margin-bottom: 120px;
+	margin-top: 72px;
+	display: flex;
+	width: 152px;
+	height: 40px;
+	gap: 16px;
+	
+}
+
+.page a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding: 2px 13px 2px 13px;
+	border-radius: 4px ;
+	color: #3B3B3B;
+	font-family: Noto Sans;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.page a:hover{
+	background: #1e1e1e;
+	color: #ffffff;
+	background-repeat: no-repeat;
+}
+
+@media (max-width:375px) {
+
+	.page ul {
+		max-width: 375px;
+		display: flex;
+		align-content: center;
+		padding-top: 0px;
+		padding-bottom: 80px;
+		max-height: 40px;	
+		margin: 0px auto;	
+		font-family: Noto Sans;
+
+
+	}
+
+}
+
+.footer {
+	margin: auto;
+	/*background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);*/
+	background-size: cover;
+	max-width: 1960px;
+	display: flex;
+	height: 424px;
+	border: 1px 0px 0px 0px;
+	position: absolute;
+}
+
+.footer1 {
+	position: relative;
+	left: 16.25%;
+	bottom: 119px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	max-width: 686px;
+	height:186px;
+	gap: 24px;
+
+}
+
+.footer1 img {
+	width: 120px;
+	height: 54px;
+
+}
+
+.footer1 h4 {
+display: flex;
+font-family: Noto Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+align-items: left;
+
+}
+
+.footer1 a {
+font-family: Noto Sans;
+color: #919191;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.2;
+text-align: left;
+text-decoration: none;
+
+}
+  
+
+.footer2 {
+	position: relative;;
+	right: 16.25%;
+	bottom: 80px;
+	display: flex;
+	max-width: 306px;
+	z-index: 3;
+	
+
+}
+.footer2 ul {
+	display: flex;
+	flex-direction: column;
+	width: 306px;
+	height: 264px;
+	gap: 24px;
+
+
+
+}
+
+
+
+.footer2 li {
+	border: 1px solid #c1c1c1;
+	position: relative;
+	padding-left: 88px;
+	padding-top: 21px;
+	height: 72px;
+	border-radius: 8px;
+	font-family: Noto Sans;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+	background: #ffffff;
+	color: #3B3B3B;
+
+}
+
+
+.footer2 .list {
+	background: #000;
+	color: #ffffff;
+	border: none;
+
+}
+
+.footer2 a {
+	text-decoration: none;
+
+}
+.footer2 img {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 56px;
+	height: 56px;
+
+}
+
+@media (max-width:375px) {
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		width: 375px;
+		height: 538px;
+		gap: 40px;
+		background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+
+	}
+	
+	.footer1 img {
+		margin: auto;
+	}
+
+	  .footer1 {
+		width: 351px;
+		height: 178px;
+		margin: 40px 12px;
+		font-size: 16px;
+		text-align: center;
+
+	  }
+
+	
+	  .footer1 h4 {
+		width: 240px;
+		height: 52px;
+		font-family: Noto Sans;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
+		margin: auto;
+
+	  }
+	
+	  .footer1 a {
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		display: block;
+		display: flex;
+		justify-content: center;
+	  }
+	
+	  .footer2 {
+		margin: auto;
+	  }
+
+
+	  .footer2 ul {
+		height: 64px;
+		gap: 24px;	
+		
+	  }
+}
+	
