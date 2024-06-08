@@ -252,7 +252,6 @@ table {
 }
 
 .banner {
-	max-width: 670px;
 	position: relative;
 	max-width: 670px;
 	text-align: center;
@@ -347,7 +346,7 @@ color: #3B3B3B;
 
   .content {
 	padding-top: 120px;
-	max-width: 1296px;;
+	max-width: 1296px;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
