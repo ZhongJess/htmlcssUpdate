@@ -361,7 +361,7 @@ color: #3B3B3B;
   
   .card {
 	margin: auto;
-	width: 636px;
+	max-width: 636px;
 	height: 538px;
   }
   
