@@ -224,7 +224,7 @@ table {
 
 .main {
 	margin: auto;
-	max-width: 1920px;
+	max-width: 100%;
  	display: flex;
 	flex-direction: column;
  	align-items: center;
@@ -267,6 +267,8 @@ span {
 	display: inline-block;
   position: relative;
   z-index: 0;
+
+
 } 
 
 .underline {
@@ -287,9 +289,11 @@ span {
   }
 
   .experience {
+	margin-top: 24px;
 	display: flex;
 	gap: 40px;
-	max-width: 636px;
+	width: 636px;
+	height: 84px;
   }  
 
   .experience h3 {
@@ -352,6 +356,7 @@ color: #3B3B3B;
 	font-size: 28px;
 	font-weight: 700;
 	margin-bottom: 8px;
+	margin-left: 16px;
   }
   
   .content p {
@@ -360,11 +365,15 @@ color: #3B3B3B;
 	line-height: 24px;
 	font-weight: 400;
 	margin-bottom: 24px;
+	margin-left: 16px;
+
   }
   
   .tag {
 	display: flex;
 	gap: 16px;
+	padding-left: 16px;
+
   }
   .tag li {
 	background: #f1f1f1;
@@ -405,11 +414,20 @@ color: #3B3B3B;
 	  
 	  .mark1 {
 		position: static !important;
+		height: 64px;
 	  }
 	  .mark2 {
 		display: none;
 	  }
+
+	 .underline {
+		width: 108px;
+		height: 6px;
+		top: 20px;
+	 }
 	
+
+
 	  .work1 {
 		margin-right: 0;
 	  }
@@ -423,6 +441,7 @@ color: #3B3B3B;
 
 .main {
 	max-width: 375px;
+	height: 540px;
 	padding: 0px;
 	padding-bottom: 80px;
 }
@@ -571,27 +590,30 @@ color: #3B3B3B;
 
 }
 
+.footer-bg {
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+	background-size: cover;
+	max-width: 100%;
+	padding: 80px 0 ;
+}
+
 .footer {
 	margin: auto;
-	/*background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);*/
-	background-size: cover;
-	max-width: 1960px;
 	display: flex;
-	height: 424px;
-	border: 1px 0px 0px 0px;
-	position: absolute;
+	height: 264px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1296px;
+
 }
 
 .footer1 {
-	position: relative;
-	left: 16.25%;
-	bottom: 119px;
-	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	max-width: 686px;
 	height:186px;
 	gap: 24px;
+	margin-top: 39px;
 
 }
 
@@ -624,12 +646,10 @@ text-decoration: none;
   
 
 .footer2 {
-	position: relative;;
-	right: 16.25%;
-	bottom: 80px;
+
 	display: flex;
 	max-width: 306px;
-	z-index: 3;
+
 	
 
 }
@@ -686,13 +706,19 @@ text-decoration: none;
 
 @media (max-width:375px) {
 
+
+	.footer-bg {
+		background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+		padding: 40px 12px;
+
+
+	}
 	.footer {
 		display: flex;
 		flex-direction: column;
-		width: 375px;
-		height: 538px;
+		width: 351px;
+		height: 458px;
 		gap: 40px;
-		background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
 
 	}
 	
@@ -703,9 +729,9 @@ text-decoration: none;
 	  .footer1 {
 		width: 351px;
 		height: 178px;
-		margin: 40px 12px;
 		font-size: 16px;
 		text-align: center;
+		margin-top: 0px;
 
 	  }
 
@@ -733,14 +759,32 @@ text-decoration: none;
 	  }
 	
 	  .footer2 {
+
 		margin: auto;
+		height: 240px;
 	  }
 
 
 	  .footer2 ul {
-		height: 64px;
-		gap: 24px;	
+			gap: 24px;	
 		
 	  }
+
+	  .footer2 li {
+		height: 64px;
+		padding-top: 17px;
+
+	}
+
+
+	.footer2 img {
+		display: block;
+		position: absolute;
+		top: 4px;
+		left: 24px;
+		width: 56px;
+		height: 56px;
+}
+
 }
 	
