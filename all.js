@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(任務二).ready(function(){
 
   $('.navbar-btn').click(function(){
 
