@@ -85,23 +85,8 @@ table {
 	}
 
 	
-		
-	
 
-	.menu a:hover{
-		font-weight: 600;
-		background: 
-		linear-gradient(#919191,#919191) top right,
-		linear-gradient(#919191,#919191) top right,
-		linear-gradient(#919191,#919191) bottom left,
-		linear-gradient(#919191,#919191) bottom left,
-		linear-gradient(#919191,#919191) bottom right,
-		linear-gradient(#919191,#919191) bottom right,
-		linear-gradient(#919191,#919191) top left, 
-		linear-gradient(#919191,#919191) top left;
-		background-size: 8px 1px, 1px 8px;
-		background-repeat: no-repeat;
-	}
+	
 
 	.menu  a {
 	display: block;
@@ -115,8 +100,28 @@ table {
 	padding: 4px 8px 4px 8px;
 
 
-
  }
+
+ .menu a:hover {
+
+	font-weight: 600;
+ }
+
+ .menu a:hover {
+	font-family:"Noto Sans";
+
+	background: 
+	linear-gradient(#919191,#919191) top right,
+	linear-gradient(#919191,#919191) top right,
+	linear-gradient(#919191,#919191) bottom left,
+	linear-gradient(#919191,#919191) bottom left,
+	linear-gradient(#919191,#919191) bottom right,
+	linear-gradient(#919191,#919191) bottom right,
+	linear-gradient(#919191,#919191) top left, 
+	linear-gradient(#919191,#919191) top left;
+	background-size: 8px 1px, 1px 8px;
+	background-repeat: no-repeat;
+}
 
 
  .navbar-btn {
@@ -195,7 +200,6 @@ table {
 
 
 
-
   .menu { 
 	display: none;
 	background: #FFFFFF;
@@ -220,6 +224,11 @@ table {
 	font-size: 20px;
 }
 
+
+.menu a:hover {
+
+	font-weight: 700;
+ }
 
 
 
@@ -345,11 +354,13 @@ color: #3B3B3B;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	row-gap: 80px;
+
+
 	
   }
   
   .card {
-
+	margin: auto;
 	width: 636px;
 	height: 538px;
   }
@@ -462,11 +473,12 @@ color: #3B3B3B;
 @media (max-width:375px) {  
 
 	.content {
-		max-width: 375px;
+		max-width: 100%;
 		margin: auto;
 		padding: 80px 12px 48px 12px;
 		max-width: 375px;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		gap: 48px;
 		justify-content: space-between;
