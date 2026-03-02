@@ -22,21 +22,6 @@ htmlcssUpdate/
 - **分頁**：頁碼導覽
 - **Footer**：聯絡資訊 + 社群連結
 
-## 響應式斷點
-
-| 斷點 | 說明 |
-|------|------|
-| `> 980px` | 桌機版，顯示完整導覽選單 |
-| `≤ 980px` | 平板 / 手機，切換為漢堡選單 |
-| `≤ 768px` | 手機版，footer 改為直式排列 |
-| `≤ 375px` | 小尺寸手機 |
-
-## 漢堡選單行為
-
-- 980px 以下顯示漢堡圖示
-- 點擊展開全螢幕下拉選單（`height: 100vh`）
-- 選單開啟時鎖定頁面捲動（`body overflow: hidden`）
-- 點擊關閉圖示收起選單，恢復頁面捲動
 
 ## 使用技術
 
@@ -44,3 +29,8 @@ htmlcssUpdate/
 - jQuery 3.7.1
 - CSS Flexbox
 - RWD Media Queries
+
+
+## Demo
+
+https://zhongjess.github.io/htmlcssUpdate/
