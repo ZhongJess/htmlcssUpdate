@@ -130,11 +130,11 @@ table {
   
 
 
- @media (max-width:678px) {
+ @media (max-width:980px) {
 
 	.header {
 		position: relative;
-		max-width: 678px;
+		max-width: 100%;
 		height: 56px;
 		padding: 8px 12px;
 
@@ -199,7 +199,7 @@ table {
 
 
 
-  .menu { 
+  .menu {
 	display: none;
 	background: #FFFFFF;
 	flex-direction: column;
@@ -208,6 +208,8 @@ table {
 	gap: 24px;
 	padding: 40px 0px;
 	width: 100%;
+	max-width: 100%;
+	height: 100vh;
 	position: fixed;
 	top: 57px;
 	left: 0;
@@ -305,7 +307,7 @@ table {
 
 
 
-  .menu { 
+  .menu {
 	display: none;
 	background: #FFFFFF;
 	flex-direction: column;
@@ -314,6 +316,8 @@ table {
 	gap: 24px;
 	padding: 40px 0px;
 	width: 100%;
+	max-width: 100%;
+	height: 100vh;
 	position: fixed;
 	top: 57px;
 	left: 0;
@@ -747,7 +751,7 @@ color: #3B3B3B;
 .footer {
 	margin: auto;
 	display: flex;
-	height: 264px;
+	/* height: 264px; */
 	flex-wrap: wrap;
 	justify-content: space-between;
 	max-width: 1920px;
@@ -851,7 +855,7 @@ text-decoration: none;
 
 }
 
-@media (max-width:375px) {
+@media (max-width:768px) {
 
 
 	.footer-bg {
@@ -863,19 +867,19 @@ text-decoration: none;
 	.footer {
 		display: flex;
 		flex-direction: column;
-		width: 351px;
-		height: 458px;
+		width: 100%;
+		height: auto;
 		gap: 40px;
 
 	}
-	
+
 	.footer1 img {
 		margin: auto;
 	}
 
 	  .footer1 {
-		width: 351px;
-		height: 178px;
+		width: 100%;
+		height: auto;
 		font-size: 16px;
 		text-align: center;
 		margin-top: 0px;
@@ -908,13 +912,14 @@ text-decoration: none;
 	  .footer2 {
 
 		margin: auto;
-		height: 240px;
+		height: auto;
 	  }
 
 
 	  .footer2 ul {
-			gap: 24px;	
-		
+			gap: 24px;
+			height: auto;
+
 	  }
 
 	  .footer2 li {
