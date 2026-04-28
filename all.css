@@ -456,21 +456,20 @@ color: #3B3B3B;
 	padding-top: 120px;
 	max-width: 1296px;
 	margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	row-gap: 80px;
-
+	padding-left: 20px;
+	padding-right: 20px;
   }
-  
 
-
+  .content > ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+	row-gap: 80px;
+  }
 
   .card {
-	margin: auto;
-	max-width: 636px;
-	height: 538px;
+	width: 100%;
+	height: auto;
   }
   
   .card img {
@@ -519,19 +518,17 @@ color: #3B3B3B;
   @media (max-width:992px) {
 
 	.content {
-		padding-left:12px;
-		padding-right:12px;
-		column-gap: 40px;
+		padding-left: 12px;
+		padding-right: 12px;
 	}
 
+  }
 
-	.card {
-		margin: auto;
-		max-width: 636px;
-		height: 500px;
-	  }
-	 
-	  
+  @media (max-width:768px) {
+
+	.content > ul {
+		grid-template-columns: 1fr;
+	}
 
   }
 
@@ -602,36 +599,31 @@ color: #3B3B3B;
   }
 
 
-@media (max-width:375px) {  
+@media (max-width:375px) {
 
 	.content {
-		max-width: 100%;
+		max-width: 375px;
 		margin: auto;
 		padding: 80px 12px 48px 12px;
-		max-width: 375px;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
+	}
+
+	.content > ul {
+		grid-template-columns: 1fr;
 		gap: 48px;
-		justify-content: space-between;
-		align-content: center;
+	}
 
-
-	  }
-	  
-	  .card {
+	.card {
 		max-width: 351px;
-		height: 344px;
-		
-	  }
+		height: auto;
+	}
 	  
 	  .card img {
 		display: block;
-		width: 351px;
-		height: 224px;
+		width: 100%;
+		height: auto;
 		border-radius: 4px;
 		margin-bottom: 16px;
-		
+
 	}
 
 	 
@@ -742,7 +734,7 @@ color: #3B3B3B;
 }
 
 .footer-bg {
-	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-lg.png);
 	background-size: cover;
 	max-width: 100%;
 	padding: 80px 0 ;
@@ -859,7 +851,7 @@ text-decoration: none;
 
 
 	.footer-bg {
-		background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+		background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-sm.png");
 		padding: 40px 12px;
 
 
